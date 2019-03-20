@@ -1,0 +1,11 @@
+C:\Windows\System32\drivers\etc\hosts
+C:\Users\Devon\AppData\Roaming\IrfanView\i_view64.ini
+C:\Users\Devon\AppData\Roaming\mpv\
+C:\Program Files (x86)\vim\_vimrc
+C:\Program Files (x86)\vim\vim80\colors\solarized.vim
+C:\Users\Devon\AppData\Roaming\Adobe\Adobe Photoshop CC 2019\Adobe Photoshop CC 2019 Settings\
+C:\Program Files\Adobe\Adobe Photoshop CC 2019\Plug-ins\
+C:\Users\Devon\AppData\Local\qBittorrent\
+C:\Users\Devon\AppData\Roaming\qBittorrent\
+C:\Users\Devon\AppData\Roaming\SumatraPDF\SumatraPDF-settings.txt
+C:\Users\Devon\AppData\Roaming\Process Hacker 2\
