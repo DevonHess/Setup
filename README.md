@@ -1,5 +1,5 @@
 # Setup
-> Reinstalling Windows made ~relatively~ easy!
+###### Reinstalling Windows made ~relatively~ easy!
 
 ## Prep
 [BackupRestore.bat](Data/BackupRestore.bat)
