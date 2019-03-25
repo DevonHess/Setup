@@ -17,7 +17,9 @@ FOR /r %%i in (*.reg) DO (
 		CLS
 	)
 	IF !choice! EQU 1 (
+		ECHO Installing %%~nxi...
 		REG IMPORT %%i
+		ECHO:
 	)
 )
 PAUSE
