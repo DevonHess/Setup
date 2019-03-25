@@ -7,19 +7,17 @@ CHOICE /m "Install all?"
 SET all=%ERRORLEVEL%
 CLS
 
-FOR /r %%i in (*) DO (
-	IF NOT [%%i]==[%~0] (
-		IF %all%==1 (
-			SET choice=1
-		) else (
-			CALL :color %%i
-			CHOICE /m "Install "%%~nxi"?"
-			SET choice=!ERRORLEVEL!
+FOR /r %%i in (*.reg) DO (
+	IF %all%==1 (
+		SET choice=1
+	) else (
+		CALL :color %%i
+		CHOICE /m "Install "%%~nxi"?"
+		SET choice=!ERRORLEVEL!
 		CLS
-		)
-		IF !choice! EQU 1 (
-			REG IMPORT %%i
-		)
+	)
+	IF !choice! EQU 1 (
+		REG IMPORT %%i
 	)
 )
 PAUSE
