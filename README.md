@@ -1,4 +1,4 @@
-# Setup
+# Windows Setup
 ###### Reinstalling Windows made ~relatively~ easy!
 
 ## Prep
