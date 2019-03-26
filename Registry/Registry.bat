@@ -1,24 +1,24 @@
 @net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
-@CD /d "%~dp0"
+@CD /D "%~dp0"
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
 
-CHOICE /m "Install all?"
+FOR /F %%G IN ('DIR /B *.reg ^| FIND /C /V ""') DO CHOICE /M "Install all "%%G" files?"
 SET all=%ERRORLEVEL%
 CLS
 
-FOR /r %%i in (*.reg) DO (
+FOR /R %%G IN (*.reg) DO (
 	IF %all%==1 (
 		SET choice=1
 	) else (
-		CALL :color %%i
-		CHOICE /m "Install "%%~nxi"?"
+		CALL :color %%G
+		CHOICE /M "Install "%%~nxG"?"
 		SET choice=!ERRORLEVEL!
 		CLS
 	)
 	IF !choice! EQU 1 (
-		ECHO Installing %%~nxi
-		REG IMPORT %%i
+		ECHO Installing %%~nxG
+		REG IMPORT %%G
 		ECHO:
 	)
 )
