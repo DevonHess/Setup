@@ -5,7 +5,7 @@
 [BackupRestore.bat](Data/BackupRestore.bat)
 
 ## Install
-[Rufus](https://rufus.ie/)
+[Rufus](https://github.com/pbatard/rufus/releases/latest)
 
 ## Tweaking
 [Registry.bat](Registry/Registry.bat)
