@@ -4,15 +4,19 @@
 
 ## Prep
 
+`skip if you're installing on a new machine`
+
 [BackupRestore.bat](Data/BackupRestore.bat)
 
 ## Install
 
+`skip if you already have a Windows iso`
+
 1. Download [SVF.ISO.CONVERTER](https://gitlab.com/s1ave77/SVF.ISO.CONVERTER/-/archive/master/SVF.ISO.CONVERTER-master.zip)
 
-2. Open README.md and follow tutorial to create .iso
+2. Open README.md and follow tutorial to create iso
 
-3. Use .iso to create bootable USB drive with [Rufus](https://github.com/pbatard/rufus/releases/latest)
+3. Use iso to create bootable USB drive with [Rufus](https://github.com/pbatard/rufus/releases/latest)
 
 ## Activation
 
@@ -37,3 +41,7 @@
 [chocolatey.bat](chocolatey.bat)
 
 [Ninite](https://ninite.com/?select=7zip-chrome-irfanview-libreoffice-sumatrapdf-vlc)
+
+---
+
+https://www.microsoft.com/en-us/software-download/windows10
