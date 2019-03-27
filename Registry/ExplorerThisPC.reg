@@ -1,6 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-; Open File Explorer to This PC
-"LaunchTo"=dword:00000001
-
