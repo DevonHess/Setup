@@ -1,7 +1,7 @@
 @net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
-@CD /D "%~dp0\Registry\"
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
+CD /D "%~dp0\Registry\"
 
 FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO CHOICE /M "Install all "%%G" files?"
 SET all=%ERRORLEVEL%
