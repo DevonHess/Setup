@@ -1,13 +1,13 @@
 # Windows Setup
-###### Reinstalling Windows made ~relatively~ easy!
+> Reinstalling Windows made ~relatively~ easy!
 
 ## Prep
 [BackupRestore.bat](Data/BackupRestore.bat)
 
 ## Install
-[Rufus](https://github.com/pbatard/rufus/releases/latest)
-
 [SVF.ISO.CONVERTER](https://gitlab.com/s1ave77/SVF.ISO.CONVERTER)
+
+[Rufus](https://github.com/pbatard/rufus/releases/latest)
 
 ## Tweaking
 ### Activation
