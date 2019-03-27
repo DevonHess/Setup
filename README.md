@@ -5,8 +5,10 @@
 [BackupRestore.bat](Data/BackupRestore.bat)
 
 ## Install
+### Download .iso
 [SVF.ISO.CONVERTER](https://gitlab.com/s1ave77/SVF.ISO.CONVERTER)
 
+### Create bootable USB drive
 [Rufus](https://github.com/pbatard/rufus/releases/latest)
 
 ## Tweaking
