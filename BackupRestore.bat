@@ -9,10 +9,10 @@ CHOICE /CS /C brBR /M "Backup or Restore"
 ECHO:
 
 :run
-IF %errorlevel% EQU 1 GOTO :backup
-IF %errorlevel% EQU 3 GOTO :backup
-IF %errorlevel% EQU 2 GOTO :restore
-IF %errorlevel% EQU 3 GOTO :restore
+IF %ERRORLEVEL% EQU 1 GOTO :backup
+IF %ERRORLEVEL% EQU 3 GOTO :backup
+IF %ERRORLEVEL% EQU 2 GOTO :restore
+IF %ERRORLEVEL% EQU 3 GOTO :restore
 :backup
 	ECHO Backing Up
 	ECHO:
@@ -47,10 +47,10 @@ GOTO :end
 		CALL :color [0m
 	)
 :end
-IF %errorlevel% GEQ 3 (
+IF %ERRORLEVEL% GEQ 3 (
 	IF [%data%]==[data.txt] (
 		SET data=big.txt
-		SET /A errorlevel=%errorlevel%-2
+		SET /A ERRORLEVEL=%ERRORLEVEL%-2
 		GOTO :run
 	)
 )
