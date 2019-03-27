@@ -16,7 +16,7 @@
 [hwid.kms38.gen.mk6.exe](https://mega.nz/#!eeggha4B!iYT9roEmDDQg_Glx_mlfSnXRwdzDSl4Tu9ajbVUKjFY)
 
 ### Registry
-[Registry.bat](Registry.bat)
+[Tweaks.bat](Tweaks.bat)
 
 ## Applications
 [chocolatey.bat](chocolatey.bat)
