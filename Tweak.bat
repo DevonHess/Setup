@@ -18,7 +18,7 @@ FOR /R %%G IN (*) DO (
 	)
 	IF !choice! EQU 1 (
 		IF %%~xG==.reg (
-			ECHO Installing %%~nxG
+			ECHO Importing %%~nxG
 			REG IMPORT "%%G"
 			ECHO:
 		) ELSE (
