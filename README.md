@@ -8,7 +8,7 @@
 [Rufus](https://github.com/pbatard/rufus/releases/latest)
 
 ## Tweaking
-[Registry.bat](Registry/Registry.bat)
+[Registry.bat](Registry.bat)
 
 ## Applications
 [chocolatey.bat](chocolatey.bat)
