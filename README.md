@@ -1,6 +1,6 @@
 # Windows Setup
 
-`Reinstalling Windows made ~relatively~ easy!`
+`Reinstalling Windows made `~`relatively`~` easy!`
 
 ## Prep
 
@@ -38,7 +38,7 @@
 
 ## Applications
 
-[chocolatey.bat](chocolatey.bat)
+[Chocolatey.bat](Chocolatey.bat)
 
 [Ninite](https://ninite.com/?select=7zip-chrome-irfanview-libreoffice-sumatrapdf-vlc)
 
