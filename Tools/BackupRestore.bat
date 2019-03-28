@@ -19,7 +19,7 @@ IF %choice% EQU 4 GOTO :restore
 :backup
 	ECHO Backing Up
 	ECHO:
-	FOR /F %%G IN (%reg%) DO (
+	FOR /F "tokens=*" %%G IN (%reg%) DO (
 		ECHO Exporting %%~nG.reg
 		CALL :color [36m
 		md "reg\%%G"
@@ -27,7 +27,7 @@ IF %choice% EQU 4 GOTO :restore
 		REG EXPORT "%%G" "reg\%%G\%%~nG.reg"
 		CALL :color [0m
 	)
-	FOR /F %%G IN (%data%) DO (
+	FOR /F "tokens=*" %%G IN (%data%) DO (
 		ECHO Backing up %%~pnG
 		CALL :color [33m
 		ROBOCOPY "%%~dpG\" "data%%~pG\" "%%~nxG" /S /NJH /NJS
@@ -38,13 +38,13 @@ GOTO :end
 :restore
 	ECHO Restoring
 	ECHO:
-	FOR /F %%G IN (%reg%) DO (
+	FOR /F "tokens=*" %%G IN (%reg%) DO (
 		ECHO Importing %%~nG.reg
 		CALL :color [36m
 		REG IMPORT "reg\%%G\%%~nG.reg"
 		CALL :color [0m
 	)
-	FOR /F %%G IN (%data%) DO (
+	FOR /F "tokens=*" %%G IN (%data%) DO (
 		ECHO Restoring %%~pnG
 		CALL :color [33m
 		ROBOCOPY "data%%~pG\" "%%~dpG\" "%%~nxG" /S /NJH /NJS
