@@ -78,6 +78,10 @@
 
 [Ninite](https://ninite.com/?select=7zip-chrome-irfanview-libreoffice-sumatrapdf-vlc)
 
+## Things to Consider
+
+1. monitor profiles
+
 ---
 
 https://www.microsoft.com/en-us/software-download/windows10
