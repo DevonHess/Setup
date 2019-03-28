@@ -4,7 +4,7 @@
 
 ## Prep
 
-`skip to [Create USB](#create-usb) if you're installing on a new machine`
+`skip to Create USB if you're installing on a new machine`
 
 [BackupRestore.bat](Data/BackupRestore.bat)
 
@@ -22,7 +22,7 @@
 
 5. Extract the zip to the root of your USB drive
 
-`skip to [Windows Setup](#windows-setup) if you already have a Windows product key`
+`skip to Windows Setup if you already have a Windows product key`
 
 6. Download [HWID GEN MkVI](https://mega.nz/#!bbRBGCCC!NoFCxrcGOB6uDaX81emDC4Y3yQ0dIFYweIKIP4K7D4Q)
 
