@@ -6,7 +6,7 @@
 
 `skip to Create USB if you're installing on a new machine`
 
-[BackupRestore.bat](Data/BackupRestore.bat)
+[BackupRestore.bat](Tools/BackupRestore.bat)
 
 ## Create USB
 
@@ -70,11 +70,11 @@
 
 ## Registry and Data
 
-[Tweaks.bat](Tweaks.bat)
+[Tweaks.bat](Tools/Tweaks.bat)
 
 ## Applications
 
-[Chocolatey.bat](Chocolatey.bat)
+[Chocolatey.bat](Tools/Chocolatey.bat)
 
 [Ninite](https://ninite.com/?select=7zip-chrome-irfanview-libreoffice-sumatrapdf-vlc)
 
