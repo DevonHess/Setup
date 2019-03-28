@@ -5,14 +5,18 @@ CD /D "%~dp0\Data\"
 SET reg=reg.txt
 SET data=data.txt
 
-CHOICE /CS /C brBR /M "Backup or Restore"
+SET ERRORLEVEL=%1
+
+IF [%1]==[] CHOICE /CS /C brBR /M "Backup or Restore"
 ECHO:
 
+SET choice=%ERRORLEVEL%
+
 :run
-IF %ERRORLEVEL% EQU 1 GOTO :backup
-IF %ERRORLEVEL% EQU 3 GOTO :backup
-IF %ERRORLEVEL% EQU 2 GOTO :restore
-IF %ERRORLEVEL% EQU 3 GOTO :restore
+IF %choice% EQU 1 GOTO :backup
+IF %choice% EQU 3 GOTO :backup
+IF %choice% EQU 2 GOTO :restore
+IF %choice% EQU 4 GOTO :restore
 :backup
 	ECHO Backing Up
 	ECHO:
@@ -47,14 +51,14 @@ GOTO :end
 		CALL :color [0m
 	)
 :end
-IF %ERRORLEVEL% GEQ 3 (
+IF %choice% GEQ 3 (
 	IF [%data%]==[data.txt] (
 		SET data=big.txt
-		SET /A ERRORLEVEL=%ERRORLEVEL%-2
+		SET /A choice=%choice%-2
 		GOTO :run
 	)
 )
-PAUSE
+EXIT /B
 
 :color
 ECHO %1

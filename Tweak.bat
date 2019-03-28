@@ -3,18 +3,21 @@
 SETLOCAL EnableDelayedExpansion
 CD /D "%~dp0\Tweaks\"
 
-FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO CHOICE /M "Install all "%%G" files?"
-SET all=%ERRORLEVEL%
-CLS
+SET ERRORLEVEL=%1
 
-FOR /R %%G IN (*) DO (
+IF [%1]==[] FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO CHOICE /M "Install all "%%G" files?"
+ECHO:
+
+SET all=%ERRORLEVEL%
+
+FOR %%G IN (*) DO (
 	IF %all%==1 (
 		SET choice=1
 	) ELSE (
 		CALL :color "%%G"
 		CHOICE /M "Install "%%~nxG"?"
 		SET choice=!ERRORLEVEL!
-		CLS
+		ECHO:
 	)
 	IF !choice! EQU 1 (
 		IF %%~xG==.reg (
@@ -28,8 +31,7 @@ FOR /R %%G IN (*) DO (
 		)
 	)
 )
-PAUSE
-EXIT
+EXIT /B
 
 :color
 ECHO [36m
