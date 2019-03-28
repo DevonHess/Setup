@@ -70,7 +70,7 @@
 
 ## Registry and Data
 
-[Tweaks.bat](Tools/Tweaks.bat)
+[Tweak.bat](Tools/Tweak.bat)
 
 ## Applications
 
