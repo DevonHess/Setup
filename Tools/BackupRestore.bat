@@ -1,5 +1,4 @@
-@net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
-@ECHO OFF
+@NET SESSION > NUL 2> NUL || PowerShell -Command "Start-Process \"%0\" -Verb RunAs" && EXIT
 CD /D "%~dp0\..\Data\"
 
 SET reg=reg.txt

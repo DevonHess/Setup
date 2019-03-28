@@ -1,11 +1,15 @@
-@net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
+@NET SESSION > NUL 2> NUL || PowerShell -Command "Start-Process \"%0\" -Verb RunAs" && EXIT
 @ECHO OFF
 CD /D "%~dp0"
 
+ECHO Running Setup Scripts
+ECHO:
 CALL Tools\Chocolatey.bat
 ECHO:
 CALL Tools\Tweak.bat 1
 ECHO:
 CALL Tools\BackupRestore.bat 4
+ECHO:
+ECHO Setup Complete
 
 PAUSE

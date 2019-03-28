@@ -1,4 +1,4 @@
-@net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
+@NET SESSION >NUL 2>&1 || PowerShell -Command "Start-Process \"%0\" -Verb RunAs" && EXIT
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
 CD /D "%~dp0\..\Tweaks\"

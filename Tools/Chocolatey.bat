@@ -1,8 +1,8 @@
 :: Run as administrator
-@net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
+@NET SESSION > NUL 2> NUL || PowerShell -Command "Start-Process \"%0\" -Verb RunAs" && EXIT
 
 :: Install Chocolatey
-@where choco > nul 2> nul || @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+@WHERE choco > NUL 2> NUL || @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 choco upgrade -y chocolatey
 choco upgrade -y GoogleChrome
@@ -13,7 +13,7 @@ choco upgrade -y k-litecodecpackbasic
 ::choco upgrade -y vlc
 ::choco upgrade -y foobar2000
 choco upgrade -y vim
-choco upgrade -y HxD
+::choco upgrade -y HxD
 choco upgrade -y libreoffice
 choco upgrade -y sumatrapdf.install
 ::choco upgrade -y pidgin
@@ -33,10 +33,10 @@ choco upgrade -y audacity
 choco upgrade -y duplicati
 choco upgrade -y 7zip
 choco upgrade -y winscp
-choco upgrade -y wamp-server
-choco upgrade -y Cygwin
+::choco upgrade -y wamp-server
+::choco upgrade -y Cygwin
 choco upgrade -y git --params "/NoShellIntegration"
-choco upgrade -y nircmd
+::choco upgrade -y nircmd
 choco upgrade -y pandoc rsvg-convert python miktex
 choco upgrade -y curl
 choco upgrade -y Wget
