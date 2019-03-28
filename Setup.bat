@@ -2,8 +2,10 @@
 @ECHO OFF
 CD /D "%~dp0"
 
-CALL Chocolatey.bat
-CALL Tweak.bat 1
-CALL BackupRestore.bat 4
+CALL Tools\Chocolatey.bat
+ECHO:
+CALL Tools\Tweak.bat 1
+ECHO:
+CALL Tools\BackupRestore.bat 4
 
 PAUSE

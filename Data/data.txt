@@ -1,1 +1,4 @@
 C:\Windows\System32\drivers\etc\hosts
+C:\Users\Devon\Desktop\New Text Document.txt
+C:\Users\Devon\Desktop\New Text Document (2).txt
+C:\Users\Devon\Desktop\New Text Document (3).txt

@@ -1,12 +1,18 @@
 @net session >nul 2>&1 || powershell -Command "Start-Process \"%0\" -Verb RunAs" && exit
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
-CD /D "%~dp0\Tweaks\"
+CD /D "%~dp0\..\Tweaks\"
 
 SET ERRORLEVEL=%1
 
-IF [%1]==[] FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO CHOICE /M "Install all "%%G" files?"
-ECHO:
+FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO (
+	IF [%1]==[] (
+		CHOICE /M "Install all "%%G" files?"
+	) ELSE (
+		ECHO Installing %%G files
+	)
+	ECHO:
+)
 
 SET all=%ERRORLEVEL%
 
@@ -31,6 +37,7 @@ FOR %%G IN (*) DO (
 		)
 	)
 )
+ECHO All files processed
 EXIT /B
 
 :color
