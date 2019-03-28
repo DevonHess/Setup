@@ -1,22 +1,32 @@
-# Windows Setup
+# Setup
 
 `Reinstalling Windows made relatively easy!`
 
 ## Prep
 
-`skip if you're installing on a new machine`
+`skip to [Create USB](#create-usb) if you're installing on a new machine`
 
 [BackupRestore.bat](Data/BackupRestore.bat)
 
 ## Create USB
 
-`skip if you already have a Windows iso`
+`skip to 4 if you already have a Windows iso`
 
 1. Download [SVF.ISO.CONVERTER](https://gitlab.com/s1ave77/SVF.ISO.CONVERTER/-/archive/master/SVF.ISO.CONVERTER-master.zip)
 
 2. Open README.md and follow tutorial to create iso
 
-3. Use iso to create bootable USB drive with [Rufus](https://github.com/pbatard/rufus/releases/latest)
+3. Use iso to create bootable USB drive with [Rufus](https://github.com/pbatard/rufus/releases/download/v3.4/rufus-3.4.exe)
+
+4. Download this repository [Windows-Setup](https://github.com/DevonHess/Windows-Setup/archive/master.zip)
+
+5. Extract the zip to the root of your USB drive
+
+`skip to [Windows Setup](#windows-setup) if you already have a Windows product key`
+
+6. Download [HWID GEN MkVI](https://mega.nz/#!bbRBGCCC!NoFCxrcGOB6uDaX81emDC4Y3yQ0dIFYweIKIP4K7D4Q)
+
+7. Place the zip to the root of your USB drive
 
 ## Windows Setup
 
@@ -50,17 +60,15 @@
 
 `skip if you already have a Windows product key`
 
-1. Download [HWID GEN MkVI](https://mega.nz/#!bbRBGCCC!NoFCxrcGOB6uDaX81emDC4Y3yQ0dIFYweIKIP4K7D4Q)
+1. Disable Windows Security Real-time Virus protection
 
-2. Disable Windows Security Real-time Virus protection
+2. Extract `HWID GEN MkVI.zip` with password `Devon`
 
-3. Extract zip with password "Devon"
+3. Run SetupComplete.cmd
 
-4. Run SetupComplete.cmd
+4. Re-enable Windows Security Real-time Virus protection
 
-5. Re-enable Windows Security Real-time Virus protection
-
-## Tweaking
+## Registry and Data
 
 [Tweaks.bat](Tweaks.bat)
 
