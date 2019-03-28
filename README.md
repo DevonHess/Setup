@@ -32,7 +32,7 @@
 
 6. Find the drive you wish to install Windows on and delete all partitions until the drive only contains unallocated space.
 
-*`THIS WILL DELETE EVERYTHING! MAKE SURE YOU HAVE SELECTED THE CORRECT DRIVE AND BACKED UP ALL DATA!`*
+**`THIS WILL DELETE EVERYTHING! MAKE SURE YOU HAVE SELECTED THE CORRECT DRIVE AND BACKED UP ALL DATA!`**
 
 7. Select the drive and click `new` and allow Windows to make additional partitions
 
