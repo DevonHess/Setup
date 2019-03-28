@@ -4,12 +4,12 @@ CD /D "%~dp0\..\Extra\"
 
 PowerShell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
 
-PowerShell -Command "(new-object System.Net.WebClient).DownloadFile('https://www.dropbox.com/s/tfk8q6x46pq2m07/_oem_.zip?dl=1','_oem_.zip')"
-PowerShell -Command "Expand-Archive -Path _oem_.zip -DestinationPath _oem_"
+PowerShell -Command "(new-object System.Net.WebClient).DownloadFile('https://www.dropbox.com/s/0uxmfwc9o0hi944/hwid.kms38.gen.mk6.zip?dl=1','hwid.kms38.gen.mk6')"
+PowerShell -Command "Expand-Archive -Path hwid.kms38.gen.mk6.zip -DestinationPath hwid.kms38.gen.mk6"
 
-CALL _oem_\$oem$\$$\Setup\Scripts\SetupComplete.cmd
-RD /S /Q _oem_
-DEL _oem_.zip
+CALL hwid.kms38.gen.mk6\SetupComplete.cmd
+RD /S /Q hwid.kms38.gen.mk6
+DEL hwid.kms38.gen.mk6.zip
 
 PowerShell -Command "Set-MpPreference -DisableRealtimeMonitoring $false"
 
