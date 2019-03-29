@@ -3,6 +3,11 @@
 
 @WHERE choco > NUL 2> NUL || @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
+ECHO [35m
+ECHO Installing Applications
+ECHO:
+ECHO [0m
+
 choco upgrade -y chocolatey
 choco upgrade -y GoogleChrome
 choco upgrade -y IrfanView

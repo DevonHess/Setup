@@ -7,6 +7,11 @@ SET data=data.txt
 
 SET ERRORLEVEL=%1
 
+ECHO [35m
+ECHO Backing Up / Restoring
+ECHO:
+ECHO [0m
+
 IF [%1]==[] (CHOICE /CS /C brBR /M "Backup or Restore" & ECHO:)
 
 SET choice=%ERRORLEVEL%
@@ -29,7 +34,7 @@ IF %choice% EQU 4 GOTO :restore
 	)
 	FOR /F "tokens=*" %%G IN (%data%) DO (
 		ECHO Backing up %%~pnG
-		CALL :color [33m
+		CALL :color [32m
 		ROBOCOPY "%%~dpG\" "data%%~pG\" "%%~nxG" /S /NJH /NJS
 		CALL :color [0m
 	)
@@ -46,7 +51,7 @@ GOTO :end
 	)
 	FOR /F "tokens=*" %%G IN (%data%) DO (
 		ECHO Restoring %%~pnG
-		CALL :color [33m
+		CALL :color [32m
 		ROBOCOPY "data%%~pG\" "%%~dpG\" "%%~nxG" /S /NJH /NJS
 		CALL :color [0m
 	)

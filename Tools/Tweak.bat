@@ -5,6 +5,11 @@ CD /D "%~dp0\..\Tweaks\"
 
 SET ERRORLEVEL=%1
 
+ECHO [35m
+ECHO Installing Tweaks
+ECHO:
+ECHO [0m
+
 FOR /F %%G IN ('DIR /B * ^| FIND /C /V ""') DO (
 	IF [%1]==[] (
 		CHOICE /M "Install all "%%G" files?"

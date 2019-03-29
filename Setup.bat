@@ -4,11 +4,13 @@ CD /D "%~dp0"
 
 ECHO Running Setup Scripts
 ECHO:
-CALL Tools\Chocolatey.bat
+CALL %~dp0\Tools\Activate.bat
 ECHO:
-CALL Tools\Tweak.bat 1
+CALL %~dp0\Tools\Tweak.bat 1
 ECHO:
-CALL Tools\BackupRestore.bat 4
+CALL %~dp0\Tools\Chocolatey.bat
+ECHO:
+CALL %~dp0\Tools\BackupRestore.bat 4
 ECHO:
 ECHO Setup Complete
 

@@ -2,15 +2,33 @@
 @ECHO OFF
 CD /D "%~dp0\..\Extra\"
 
+ECHO [35m
+ECHO Activating Windows
+ECHO:
+ECHO [0m
+
+ECHO Disabling Windows Security
+
 PowerShell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
 
-PowerShell -Command "(new-object System.Net.WebClient).DownloadFile('https://www.dropbox.com/s/1i3917ukr2pxgk2/_oem_.exe?dl=1','_oem_.exe')"
+IF NOT EXIST _oem_.exe PowerShell -Command "(new-object System.Net.WebClient).DownloadFile('https://www.dropbox.com/s/1i3917ukr2pxgk2/_oem_.exe?dl=1','_oem_.exe')"
 
 _oem_.exe -P"_oem_" -Y
 
-CALL $oem$\$$\Setup\Scripts\SetupComplete.cmd
-RD /S /Q $oem$
+CD /D "%~dp0\..\Extra\$oem$\$$\Setup\Scripts\"
+CALL SetupComplete.cmd 2> NUL
+
+ECHO [33m
+
+TYPE hwid.log
+
+CD /D "%~dp0\..\Extra\"
+
+ECHO:
+ECHO [0mEnabling Windows Security
 
 PowerShell -Command "Set-MpPreference -DisableRealtimeMonitoring $false"
 
-PAUSE
+RD /S /Q $oem$
+
+EXIT /B
