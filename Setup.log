@@ -1,0 +1,32 @@
+[35m
+Activating Windows
+
+[0m
+Disabling Windows Security
+[33m
+System check:
+Description: Windows(R) Operating System, VOLUME_KMSCLIENT channel
+Architecture: x64
+PartialKey: J462D
+Edition: EnterpriseS
+Status Licensed
+
+Starting activation at 29 Mar 2019 15:29:49...
+
+Installing key M7XTQ-FN8P6-TTKYV-9D4CC-J462D...
+Installed product key M7XTQ-FN8P6-TTKYV-9D4CC-J462D successfully.
+
+Setting KMS Host IP to avoid DNS queries...
+Key Management Service machine name set to 192.0.2.69:1833 successfully.
+
+Creating ticket...
+Applying GenuineTicket.xml...
+Done.
+Converted license Microsoft.Windows.125.X21-83261_8wekyb3d8bbwe and stored at C:\ProgramData\Microsoft\Windows\ClipSvc\Install\Migration\00a864cd-399d-4d6a-9f33-516460861ff5.xml.
+Successfully converted 1 licenses from genuine authorization tickets on disk.
+Done.
+Done.
+
+
+
+[0mEnabling Windows Security

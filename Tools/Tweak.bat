@@ -39,6 +39,7 @@ FOR %%G IN (*) DO (
 			ECHO Running %%~nxG
 			CALL "%%G"
 			ECHO:
+			ECHO:
 		)
 	)
 )

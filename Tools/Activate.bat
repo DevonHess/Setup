@@ -30,5 +30,6 @@ ECHO [0mEnabling Windows Security
 PowerShell -Command "Set-MpPreference -DisableRealtimeMonitoring $false"
 
 RD /S /Q $oem$
+DEL %SYSTEMROOT%\Temp\warnk.exe
 
 EXIT /B
