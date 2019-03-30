@@ -1,84 +1,84 @@
-ASSOC .3ga=io.mpv.3ga
-ASSOC .3ga2=io.mpv.3ga2
-ASSOC .3gp2=io.mp=v.3gp2
-ASSOC .3gpp=io.mpv.3gpp
-ASSOC .3iv=io.mpv.3iv
-ASSOC .aac=io.mpv.aac
-ASSOC .ac3=io.mpv.ac3
-ASSOC .adts=io.mpv.adts
-ASSOC .aiff=io.mpv.aiff
-ASSOC .amr=io.mpv.amr
-ASSOC .ape=io.mpv.ape
-ASSOC .asf=io.mpv.asf
-ASSOC .au=io.mpv.au
-ASSOC .avi=io.mpv.avi
-ASSOC .awb=io.mpv.awb
-ASSOC .ay=io.mpv.ay
-ASSOC .cue=io.mpv.cue
-ASSOC .divx=io.mpv.divx
-ASSOC .dts=io.mpv.dts
-ASSOC .hd=io.mpv.dts-hd
-ASSOC .dv=io.mpv.dv
-ASSOC .ms=io.mpv.dvr-ms
-ASSOC .eac3=io.mpv.eac3
-ASSOC .evob=io.mpv.evob
-ASSOC .f4a=io.mpv.f4a
-ASSOC .f4v=io.mpv.f4v
-ASSOC .flac=io.mpv.flac
-ASSOC .flic=io.mpv.flic
-ASSOC .flv=io.mpv.flv
-ASSOC .gbs=io.mpv.gbs
-ASSOC .gxf=io.mpv.gxf
-ASSOC .gym=io.mpv.gym
-ASSOC .h264=io.mpv.h264
-ASSOC .hdmov=io.mpv.hdmov
-ASSOC .hes=io.mpv.hes
-ASSOC .hevc=io.mpv.hevc
-ASSOC .kss=io.mpv.kss
-ASSOC .lpcm=io.mpv.lpcm
-ASSOC .m2ts=io.mpv.m2ts
-ASSOC .m3u=io.mpv.m3u
-ASSOC .m4a=io.mpv.m4a
-ASSOC .mk3d=io.mpv.mk3d
-ASSOC .mka=io.mpv.mka
-ASSOC .mkv=io.mpv.mkv
-ASSOC .mlp=io.mpv.mlp
-ASSOC .mp3=io.mpv.mp3
-ASSOC .mpa=io.mpv.mpa
-ASSOC .mpeg=io.mpv.mpeg
-ASSOC .mpeg4=io.mpv.mpeg4
-ASSOC .mxf=io.mpv.mxf
-ASSOC .nsf=io.mpv.nsf
-ASSOC .nsfe=io.mpv.nsfe
-ASSOC .nsv=io.mpv.nsv
-ASSOC .nut=io.mpv.nut
-ASSOC .oga=io.mpv.oga
-ASSOC .ogv=io.mpv.ogv
-ASSOC .ogx=io.mpv.ogx
-ASSOC .opus=io.mpv.opus
-ASSOC .pcm=io.mpv.pcm
-ASSOC .pls=io.mpv.pls
-ASSOC .qt=io.mpv.qt
-ASSOC .ra=io.mpv.ra
-ASSOC .rm=io.mpv.rm
-ASSOC .rmvb=io.mpv.rmvb
-ASSOC .sap=io.mpv.sap
-ASSOC .shn=io.mpv.shn
-ASSOC .spc=io.mpv.spc
-ASSOC .spx=io.mpv.spx
-ASSOC .hd=io.mpv.true-hd
-ASSOC .tta=io.mpv.tta
-ASSOC .vgm=io.mpv.vgm
-ASSOC .vgz=io.mpv.vgz
-ASSOC .vob=io.mpv.vob
-ASSOC .wav=io.mpv.wav
-ASSOC .weba=io.mpv.weba
-ASSOC .webm=io.mpv.webm
-ASSOC .wm=io.mpv.wm
-ASSOC .wma=io.mpv.wma
-ASSOC .wmv=io.mpv.wmv
-ASSOC .wtv=io.mpv.wtv
-ASSOC .wv=io.mpv.wv
-ASSOC .xvid=io.mpv.xvid
-ASSOC .y4m=io.mpv.y4m
-ASSOC .yuv=io.mpv.yuv
+io.mpv.3ga
+io.mpv.3ga2
+io.mpv.3gp2
+io.mpv.3gpp
+io.mpv.3iv
+io.mpv.aac
+io.mpv.ac3
+io.mpv.adts
+io.mpv.aiff
+io.mpv.amr
+io.mpv.ape
+io.mpv.asf
+io.mpv.au
+io.mpv.avi
+io.mpv.awb
+io.mpv.ay
+io.mpv.cue
+io.mpv.divx
+io.mpv.dts
+io.mpv.dts-hd
+io.mpv.dv
+io.mpv.dvr-ms
+io.mpv.eac3
+io.mpv.evob
+io.mpv.f4a
+io.mpv.f4v
+io.mpv.flac
+io.mpv.flic
+io.mpv.flv
+io.mpv.gbs
+io.mpv.gxf
+io.mpv.gym
+io.mpv.h264
+io.mpv.hdmov
+io.mpv.hes
+io.mpv.hevc
+io.mpv.kss
+io.mpv.lpcm
+io.mpv.m2ts
+io.mpv.m3u
+io.mpv.m4a
+io.mpv.mk3d
+io.mpv.mka
+io.mpv.mkv
+io.mpv.mlp
+io.mpv.mp3
+io.mpv.mpa
+io.mpv.mpeg
+io.mpv.mpeg4
+io.mpv.mxf
+io.mpv.nsf
+io.mpv.nsfe
+io.mpv.nsv
+io.mpv.nut
+io.mpv.oga
+io.mpv.ogv
+io.mpv.ogx
+io.mpv.opus
+io.mpv.pcm
+io.mpv.pls
+io.mpv.qt
+io.mpv.ra
+io.mpv.rm
+io.mpv.rmvb
+io.mpv.sap
+io.mpv.shn
+io.mpv.spc
+io.mpv.spx
+io.mpv.true-hd
+io.mpv.tta
+io.mpv.vgm
+io.mpv.vgz
+io.mpv.vob
+io.mpv.wav
+io.mpv.weba
+io.mpv.webm
+io.mpv.wm
+io.mpv.wma
+io.mpv.wmv
+io.mpv.wtv
+io.mpv.wv
+io.mpv.xvid
+io.mpv.y4m
+io.mpv.yuv
