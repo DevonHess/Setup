@@ -15,7 +15,7 @@ choco upgrade -y IrfanViewplugins
 choco upgrade -y mpv
 choco upgrade -y k-litecodecpackbasic
 ::choco upgrade -y vlc
-::choco upgrade -y foobar2000
+choco upgrade -y foobar2000
 choco upgrade -y vim
 ::choco upgrade -y HxD
 choco upgrade -y libreoffice
