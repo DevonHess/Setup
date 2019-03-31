@@ -2,4 +2,5 @@
 @ECHO OFF
 CD /D "%~dp0\..\Extra\"
 COPY "defaultassociations.xml" "c:\windows\system32\defaultassociations.xml"
-::DISM /online /Import-DefaultAppAssociations:"..\Extra\DefaultAppAssociations.xml"
+DISM /online /Import-DefaultAppAssociations:"..\Extra\DefaultAppAssociations.xml"
+EXIT /B
