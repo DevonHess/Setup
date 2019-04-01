@@ -14,4 +14,7 @@ CALL %~dp0\Tools\BackupRestore.bat 4
 ECHO:
 ECHO Setup Complete
 
-PAUSE
+ECHO [31mPress any key to restart . . .
+PAUSE > NUL
+
+SHUTDOWN /R
