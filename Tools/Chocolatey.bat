@@ -41,7 +41,7 @@ choco upgrade -y winscp
 ::choco upgrade -y Cygwin
 choco upgrade -y git --params "/NoShellIntegration"
 ::choco upgrade -y nircmd
-choco upgrade -y pandoc rsvg-convert python miktex
+::choco upgrade -y pandoc rsvg-convert python miktex
 choco upgrade -y curl
 choco upgrade -y Wget
 choco upgrade -y youtube-dl
