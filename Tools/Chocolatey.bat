@@ -40,6 +40,7 @@ choco upgrade -y winscp
 ::choco upgrade -y wamp-server
 ::choco upgrade -y Cygwin
 choco upgrade -y git --params "/NoShellIntegration"
+choco upgrade -y ctags
 ::choco upgrade -y nircmd
 ::choco upgrade -y pandoc rsvg-convert python miktex
 choco upgrade -y curl
