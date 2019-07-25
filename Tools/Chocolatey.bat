@@ -9,6 +9,7 @@ ECHO:
 ECHO [0m
 
 choco upgrade -y chocolatey
+choco upgrade -y malwarebytes
 choco upgrade -y GoogleChrome
 choco upgrade -y IrfanView
 choco upgrade -y IrfanViewplugins
@@ -45,6 +46,7 @@ choco upgrade -y ctags
 ::choco upgrade -y pandoc rsvg-convert python miktex
 choco upgrade -y curl
 choco upgrade -y Wget
+choco upgrade -y putty
 choco upgrade -y youtube-dl
 choco upgrade -y autohotkey
 choco upgrade -y QTTabBar
